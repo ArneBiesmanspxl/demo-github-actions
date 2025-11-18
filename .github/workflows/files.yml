@@ -1,0 +1,12 @@
+name: Directory & File Manipulation
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+     - run: mkdir -p new_directory
+     - run: echo "korte tekst" > new_directory/new_bestand.txt
+     - run: ls new_directory
